@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Sucesso</title>
 </head>
 <body>
 Ola<br/>
-Logado com Sucesso<br/>
+Logado com Sucesso! Fabio M. Torres - SP3023184<br/>
 <a href="logout">Logout</a>
 </body>
 </html>
