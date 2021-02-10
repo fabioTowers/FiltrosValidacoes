@@ -33,8 +33,14 @@ public class Filtro implements Filter{
 				httpReq.getRequestURI().endsWith("loginForm")||
 				httpReq.getRequestURI().endsWith("efetuaLogin")||
 				httpReq.getRequestURI().contains("resources")){
-			
+                    
+			long tempoInicial = System.currentTimeMillis();
 			chain.doFilter(request, response);
+                        long tempoFinal = System.currentTimeMillis();
+                        
+                        String uri = ((HttpServletRequest) request).getRequestURI();
+                        System.out.println("Tempo da requisição em " + uri + " foi de: "
+                                                + (tempoFinal - tempoInicial));
 			
 			return;
 		}
